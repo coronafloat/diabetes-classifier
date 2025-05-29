@@ -1,0 +1,9 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Virtual environment (venv)
+.venv/
+
+# Flask logs
+*.log
