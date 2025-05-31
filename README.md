@@ -5,6 +5,7 @@ This project implements a **Diabetes Prediction** web application using **Flask*
 ## Table of Contents
 - [Setup for Flask Backend](#setup-for-flask-backend)
 - [Setup for React Frontend](#setup-for-react-frontend)
+- [Modeling Process](#modeling)
 
 ---
 
@@ -45,7 +46,15 @@ Make a new terminal before doing React setup
    npm install
 
 2. **Start the React Development Server**:
+
     How to run the React server:
    ```bash
    npm run dev
+
+## Modeling
+
+1. **Modeling**:
+
+    I do cleaning, PreProcessing, and Modeling on the Google Colaboratory, so I will give the link to access.
+    Link : https://colab.research.google.com/drive/1b6PId1ONtjUlpbKgA7m6KsYoww-beNhs?usp=sharing
 
