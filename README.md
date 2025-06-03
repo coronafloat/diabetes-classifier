@@ -45,7 +45,11 @@ Make a new terminal before doing React setup
    cd client
    npm install
 
-2. **Start the React Development Server**:
+2. **Set Up the Environment**:
+
+   Change .env.example filename to .env
+
+3. **Start the React Development Server**:
 
     How to run the React server:
    ```bash
