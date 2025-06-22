@@ -9,12 +9,16 @@ app = Flask(__name__)
 CORS(app)
 
 # Tentukan path ke folder models
-model_path = os.path.join(os.getcwd(), 'models', 'model.pkl')
-scaler_path = os.path.join(os.getcwd(), 'models', 'scaler.pkl')
+model_path = os.path.join(os.getcwd(), 'models', 'model-v3.pkl')
+scaler_path = os.path.join(os.getcwd(), 'models', 'scaler-v3.pkl')
 
 # Muat model dan scaler yang sudah disimpan
 model = joblib.load(model_path)
 scaler = joblib.load(scaler_path)
+
+# Debug
+print(model)
+print(scaler)
 
 # Urutan kolom yang digunakan saat pelatihan model
 columns = ['Glucose', 'BMI', 'Age', 'BloodPressure']
