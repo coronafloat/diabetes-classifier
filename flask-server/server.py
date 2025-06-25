@@ -43,8 +43,8 @@ def predict():
     # Prediksi probabilitas
     y_prob = model.predict_proba(scaled_input)[:, 1]
 
-    # Terapkan threshold 0.4
-    prediction = 1 if y_prob >= 0.4 else 0
+    # Terapkan threshold 0.5
+    prediction = 1 if y_prob >= 0.5 else 0
 
     # Kirimkan hasil prediksi sebagai response JSON
     return jsonify({"prediction": "Diabetes" if prediction == 1 else "Non-Diabetes"})
